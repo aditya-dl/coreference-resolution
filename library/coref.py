@@ -2,7 +2,7 @@ import os
 import xmltodict
 import re
 import subprocess
-from . import bcm_evaluate
+from . import evaluate
 from collections import namedtuple
 from glob import glob
 import numpy as np
