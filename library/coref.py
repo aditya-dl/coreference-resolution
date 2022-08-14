@@ -374,9 +374,9 @@ def evaluate_bcm(all_markables, all_predictions):
     """
     Evaluate document corpus in terms of B-Cubed, CEAF, MUC F-1 scores
     """
-    b3_eval = bcm_evaluate.Evaluator(bcm_evaluate.b_cubed)
-    ceaf_eval = bcm_evaluate.Evaluator(bcm_evaluate.ceafe)
-    muc_eval = bcm_evaluate.Evaluator(bcm_evaluate.muc)
+    b3_eval = evaluate.Evaluator(evaluate.b_cubed)
+    ceaf_eval = evaluate.Evaluator(evaluate.ceafe)
+    muc_eval = evaluate.Evaluator(evaluate.muc)
 
     all_docs = [docify(x, y) for x, y in zip(all_markables, all_predictions)]
     for d in all_docs:
